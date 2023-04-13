@@ -264,7 +264,7 @@
 }
 
 .speaker-boxes {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 .speaker-box {
   width: 100%;
@@ -327,8 +327,127 @@
   right: 0;
   z-index: 10;
 }
+.speaker-btn {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.speaker-btn button {
+  width: 200px;
+  height: 45px;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: 600;
+}
+.speaker-btn button:hover {
+  border: none;
+  background-color: #2a39d9;
+  transition: all ease-in-out 0.5s;
+}
+
 /* section-3  */
 
+/* section-4 */
+
+.section-4 {
+  background-color: #151853;
+  height: 100vh;
+}
+.schedule-header {
+  text-align: center;
+}
+.schedule-header h6 {
+  color: #c925d8;
+  padding-top: 100px;
+}
+.schedule-header h1 {
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 70px;
+}
+.tab-container {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+/* section-4 */
+
+/* section-5 */
+
+.section-5 {
+  background: linear-gradient(150deg, rgb(95, 83, 199), rgb(181, 68, 172));
+  height: 100vh;
+}
+.ticket-header {
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+.ticket-header h1 {
+  font-weight: 600;
+}
+.ticket-card {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.pass-div {
+  background-color: #df42b1;
+  width: fit-content;
+  height: 40px;
+  color: #fff;
+  font-size: larger;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.ticket-card span {
+  font-size: 70px;
+  font-weight: 700;
+}
+sup {
+  font-size: 40px;
+}
+.ticket-card button {
+  color: #fff;
+  background: linear-gradient(150deg, rgb(197, 65, 209), rgb(31, 96, 236));
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+.ticket-card button i {
+  color: #fff;
+}
+.ticket-card i {
+  color: #df42b1;
+}
+.ticket-card p {
+  font-size: large;
+  color: #5d5e8d;
+}
+/* section-5 */
 /* Media query */
 
 @media (max-width: 767px) {
