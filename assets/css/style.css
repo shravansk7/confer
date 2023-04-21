@@ -384,7 +384,7 @@
 
 .section-5 {
   background: linear-gradient(150deg, rgb(95, 83, 199), rgb(181, 68, 172));
-  height: 100vh;
+  height: fit-content;
 }
 .ticket-header {
   text-align: center;
@@ -392,30 +392,20 @@
   padding-top: 100px;
 }
 .ticket-header h1 {
-  font-weight: 600;
+  font-weight: 700;
 }
 .ticket-card {
   background-color: #fff;
   border-radius: 10px;
+  width: 90%;
   text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
-.pass-div {
-  background-color: #df42b1;
-  width: fit-content;
-  height: 40px;
-  color: #fff;
-  font-size: larger;
-  font-weight: 700;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: 2px;
-  padding-top: 5px;
-  padding-bottom: 0px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-left: 100px;
-  margin-bottom: 25px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.ticket-card:hover {
+  scale: 110%;
+  transition: all ease-in-out 0.9s;
 }
 
 .ticket-card span {
@@ -425,17 +415,33 @@
 sup {
   font-size: 40px;
 }
+.ticket-card h6 {
+  background-color: #df42b1;
+  color: #fff;
+  font-weight: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .ticket-card button {
   color: #fff;
   background: linear-gradient(150deg, rgb(197, 65, 209), rgb(31, 96, 236));
-  width: 250px;
+  width: 80%;
   height: 45px;
   border: none;
   border-radius: 50px;
   font-size: 15px;
   font-weight: 600;
-  margin-left: 25px;
+  /* margin-left: 25px; */
   margin-bottom: 30px;
+}
+.ticket-card button:active {
+  background: #ffffff;
+  color: #000000;
+  transition: ease-in 0.5s;
 }
 .ticket-card button i {
   color: #fff;
@@ -448,7 +454,106 @@ sup {
   color: #5d5e8d;
 }
 /* section-5 */
+
+/* section-6 */
+
+.section-6 {
+  background-color: #151853;
+  height: fit-content;
+  padding-bottom: 100px;
+}
+.sponsor-header {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+.sponsor-header h6 {
+  color: #df42b1;
+  letter-spacing: 1px;
+}
+.sponsor-header h1 {
+  font-weight: 700;
+}
+.sponsor-brand {
+  width: 25%;
+  border: 1px solid rgb(88, 89, 98);
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.sponsor-brand img {
+  opacity: 50%;
+}
+.sponsor-brand img:hover {
+  opacity: 100%;
+  transition: all ease-in-out 0.5s;
+}
+.sponsor-card {
+  color: #fff;
+  margin-top: 100px;
+  background-color: #2d3065;
+  border-radius: 10px;
+  padding: 50px;
+}
+.sponsor-card p {
+  font-size: large;
+  line-height: 30px;
+}
+.sponsor-card img {
+  border-radius: 50%;
+  width: 20%;
+  margin-top: 10px;
+}
+.manager-name {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+.manager-name h6 {
+  color: #df42b1;
+  font-weight: 100;
+}
+/* section-6 */
+
+/* section-7 */
+
+.section-7 {
+  height: 100vh;
+  background-image: url(imgs/bg-3);
+  position: relative;
+}
+.section-7::after {
+  content: "";
+  background: linear-gradient(120deg, #df42b1 0%, #505add 100%);
+  opacity: 90%;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.news-header {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* section-7 */
 /* Media query */
+
+@media (max-width: 992px) {
+  .sponsor-brand img {
+    width: 75%;
+    margin-left: 20px;
+  }
+  .sponsor-card img {
+    width: 30%;
+  }
+}
 
 @media (max-width: 767px) {
   .banner h1 {
@@ -467,6 +572,16 @@ sup {
   .box {
     margin-top: 20px;
   }
+  .sponsor-brand img {
+    width: 75%;
+    margin-left: 10px;
+  }
+  .sponsor-brand {
+    padding: 20px 0px;
+  }
+  .sponsor-card img {
+    width: 20%;
+  }
 }
 
 @media (max-width: 465px) {
@@ -483,6 +598,9 @@ sup {
   }
   .box span {
     font-size: 10px;
+  }
+  .sponsor-card img {
+    width: 30%;
   }
 }
 
